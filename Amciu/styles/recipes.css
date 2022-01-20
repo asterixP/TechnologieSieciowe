@@ -1,0 +1,47 @@
+.recipe-item {
+  display: flex;
+  background: #f5f6fa;
+  padding: 20px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.recipe-image {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.recipe-title {
+  position: absolute;
+  top: 0;
+  background: #f5f6fa;
+  border: 1px solid #2f3640;
+  padding: 10px;
+  font-size: 20px;
+  left: 140px;
+  top: -10px;
+}
+
+.recipe-select,
+.recipe-select option {
+  text-transform: capitalize;
+}
+
+.recipe-description {
+  padding-top: 30px;
+  padding-left: 20px;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .recipe-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .recipe-title {
+    left: 240px;
+  }
+}

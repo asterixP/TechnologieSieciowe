@@ -1,0 +1,104 @@
+/******** ABOUT US ********/
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+.about-item {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.about-item p {
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about-item img {
+  width: 90px;
+}
+
+@media (min-width: 768px) {
+  .about {
+    flex-wrap: nowrap;
+  }
+  
+  .about-item {
+    flex-basis: calc(100%/3);
+  }
+}
+
+/******** MENU ********/
+.menu {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / auto;
+  grid-gap: 15px;
+}
+
+.menu-item {
+  flex-basis: 100%;
+  background: #7f8fa6;
+  height: 140px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.menu-item a {
+  color: #fff;
+  font-size: 32px;
+  line-height: 40px;
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item:hover {
+  background: #5d6d84;
+  cursor: pointer;
+}
+
+.menu-item-recipes {
+  background: url('/assets/img/christmas_bg.jpg') !important;
+}
+
+.menu-item-recipes a {
+  color: #000;
+  font-weight: bold;
+  text-shadow: 0 0 30px yellow;
+}
+
+.menu-item-recipes:hover {
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    grid-template: auto / auto auto auto;
+  }
+  
+  .menu-item {
+    flex-basis: calc(100%/3);
+  }
+}

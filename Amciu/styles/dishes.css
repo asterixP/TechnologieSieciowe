@@ -1,0 +1,45 @@
+.dish {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.dish-image {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.dish-info {
+  margin-left: 5px;
+}
+
+.dish-name {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.dish form {
+  margin-left: auto;
+}
+
+.dish .input {
+  max-width: 60px;
+}
+
+@media (min-width: 768px) {
+  .dish-image {
+    width: 230px;
+    height: 230px;
+  }
+
+  .dish-name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .dish-info {
+    margin-left: 20px;
+  }
+}
